@@ -6,269 +6,574 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/056ef466ef.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
-      <img src="" alt="" />
+      <div class="img-logo">
+        <img
+          src="https://programmers.co.kr/assets/bi-programmers-light-0d164d49b51a123bab5cca11106145d6fac5a5ac04b8646780369c2a5bc0dd79.png"
+          alt="로고"
+          class="img-logo-with-text"
+        />
+        <img
+          src="https://programmers.co.kr/assets/bi-symbol-light-49a242793b7a8b540cfc3489b918e3bb2a6724f1641572c14c575265d7aeea38.png"
+          alt="로고"
+          class="img-logo-only-img"
+        />
+      </div>
       <nav>
-        <div>탑프로그래머스</div>
-        <div>실력 체크</div>
-        <div>개발자 채용</div>
-        <div>테크 피드</div>
-        <div>|</div>
-        <div>코딩테스트 연습</div>
-        <div>프로그래밍 강의</div>
+        <div class="nav__item">탑프로그래머스</div>
+        <div class="nav__item">실력 체크</div>
+        <div class="nav__item">개발자 채용</div>
+        <div class="nav__item">테크 피드</div>
+        <div class="nav__item">|</div>
+        <div class="nav__item">코딩테스트 연습</div>
+        <div class="nav__item">프로그래밍 강의</div>
       </nav>
-      <div><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /></div>
+      <div class="header-icons">
+        <i class="far fa-file-alt"></i>
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="header-icon-bar">
+        <div class="bar__line"></div>
+        <div class="bar__line"></div>
+        <div class="bar__line"></div>
+      </div>
     </header>
     <main>
-      <section>
-        <article>
-          <div>
-            <div>
-              <div>
-                <p>프로그래머스 이벤트</p>
-                <h1>JetBrains x 프로그래머스 월간 코드 챌린지 시즌3</h1>
+      <section class="banner">
+        <article class="banner-container main-container">
+          <div class="banner-contents">
+            <div class="banner-texts">
+              <div class="banner-headline">
+                <p class="banner__subtitle">
+                  채용 중인 기업 & 개발자 매칭 프로젝트
+                </p>
+                <h1 class="banner__title">
+                  Dev-Matching<br />프론트엔드 개발자(하반기)
+                </h1>
               </div>
-              <p>
-                챌린지: 9/9(목), 10/7(목)<br />10월까지 4문제 풀기 미션 완료하고
-                선물도 받아 가세요!
+              <p class="banner__descript">
+                접수 마감: 09.03.(금)<br />과제테스트: 09.04.(토)
               </p>
             </div>
-            <div><img src="" alt="" /></div>
-            <div>
-              <div></div>
-              <div></div>
+            <div class="banner-img-container">
+              <img
+                class="banner__img"
+                src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/competition-imgs/2021/dm_fe2/2021-dm-fe-02__prgm__html-banner.png"
+                alt=""
+              />
             </div>
+          </div>
+          <div class="banner-slide-container">
+            <div class="banner-slide slide--selected"></div>
+            <div class="banner-slide slide--unselected"></div>
           </div>
         </article>
-        <article class="employment">
-          <div class="employment-head article-head">
-            <div>
-              <h2 class="title">채용 프로그램</h2>
-              <img src="" alt="?" />
-            </div>
-            <button class="button-more">더보기</button>
-          </div>
-          <div class="employment-contents">
-            <div class="employment-info">
-              <div class="employment-info__left">
-                <img
-                  src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/competition-imgs/2021/monthly_code_challenge_s3/2021-mcc-3__prgm__img-banner.png"
-                  alt=""
-                />
+      </section>
+      <div class="main-container main-container--horizontal">
+        <section>
+          <article class="recruitment-program sub-container">
+            <div class="article-head">
+              <div class="article-title-with-help">
+                <h2 class="article-title">채용 프로그램</h2>
+                <i class="fas fa-question-circle"></i>
               </div>
-              <div class="employment-info__right">
-                <h3 class="employment-info__title">
-                  JetBrains x 프로그래머스 월간 코드 챌린지 시즌3
-                </h3>
-                <p class="employment-info__receipt-date">
-                  접수 : 21년 08월 23일 11:00 ~ 10월 07일 18:00
-                </p>
-                <p class="employment-info__test-date">
-                  테스트 : 21년 09월 09일 19:30 ~ 09월 09일 22:30
-                </p>
-                <div class="employment-info__languages">
-                  <img src="" alt="" /><img src="" alt="" /><img
-                    src=""
-                    alt=""
-                  /><img src="" alt="" /><img src="" alt="" /><img
-                    src=""
+              <button class="more-btn">더보기</button>
+            </div>
+            <div class="recruitment-program-contents">
+              <div class="recruitment-program-content">
+                <div class="recruitment-program-img-container">
+                  <img
+                    src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/competition-imgs/2021/monthly_code_challenge_s3/2021-mcc-3__prgm__img-banner.png"
+                    class="recruitment-program-info__img"
                     alt=""
                   />
                 </div>
+                <div class="recruitment-program-content__info">
+                  <h3 class="recruitment-program-content__title">
+                    JetBrains x 프로그래머스 월간 코드 챌린지 시즌3
+                  </h3>
+                  <div class="recruitment-program-content__detail">
+                    <div class="recruitment-program-content__date">
+                      <p>접수 : 21년 08월 23일 11:00 ~ 10월 07일 18:00</p>
+                      <p>테스트 : 21년 09월 09일 19:30 ~ 09월 09일 22:30</p>
+                    </div>
+                    <div class="recruitment-program-content__languages">
+                      <i class="fab fa-java"></i>
+                      <i class="fab fa-python"></i>
+                      <i class="fab fa-js-square"></i>
+                      <i class="fab fa-swift"></i>
+                      <i class="fab fa-node-js"></i>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </article>
-        <article>
-          <div>
-            <div>
-              <h2>채용 중인 포지션</h2>
-            </div>
-            <button>포지션 더보기</button>
-          </div>
-          <div>
-            <div>Java</div>
-            <div>Spring</div>
-            <div>Node.js</div>
-            <div>Django</div>
-            <div>ReactJS</div>
-            <div>Vue.js</div>
-            <div>JavaScript</div>
-            <div>Python</div>
-            <div>Kotlin</div>
-            <div>C++</div>
-            <div>Android</div>
-            <div>IOS</div>
-            <div>서버/백엔드</div>
-            <div>프론트엔드</div>
-            <div>웹 풀스택</div>
-            <div>안드로이드 앱</div>
-            <div>아이폰 앱</div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <img
-                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/2412/%EC%9E%90%EC%82%B0_1-100.jpg"
-                  alt=""
-                />
-                <div>
-                  <h3>Back-end Engineer</h3>
-                  <p>스페이스워크</p>
-                  <div>
-                    <div>서버/백엔드</div>
-                    <div>Amazon Web Services(AWS)</div>
-                    <div>GCP(Google Cloud Platform)</div>
-                    <div>RxJava</div>
-                    <div>Reactor</div>
-                    <div>Kubernetes</div>
+              <div class="recruitment-program-content">
+                <div class="recruitment-program-img-container">
+                  <img
+                    src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/banners/2022_KAKAO_BLIND_RECRUITMENT/2022_KAKAO_BLIND_RECRUITMENT1.png"
+                    class="recruitment-program-info__img"
+                    alt=""
+                  />
+                </div>
+                <div class="recruitment-program-content__info">
+                  <h3 class="recruitment-program-content__title">
+                    2022 KAKAO BLIND RECRUITMENT
+                  </h3>
+                  <div class="recruitment-program-content__detail">
+                    <div class="recruitment-program-content__date">
+                      <p>접수 : 21년 08월 19일 11:00 - 09월 06일 17:00</p>
+                      <p>테스트 : 21년 09월 11일 14:00 - 09월 11일 19:30</p>
+                    </div>
+                    <div class="recruitment-program-content__languages">
+                      <i class="fab fa-java"></i>
+                      <i class="fab fa-js-square"></i>
+                      <i class="fab fa-python"></i>
+                      <i class="fab fa-python"></i>
+                      <i class="fab fa-swift"></i>
+                      <i class="fab fa-node-js"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recruitment-program-content">
+                <div class="recruitment-program-img-container">
+                  <img
+                    src="https://grepp-cloudfront.s3.ap-northeast-2.amazonaws.com/programmers_imgs/competition-imgs/2021/dm_fe2/2021-dm-fe-02__prgm__img-banner.png"
+                    class="recruitment-program-info__img"
+                    alt=""
+                  />
+                </div>
+                <div class="recruitment-program-content__info">
+                  <h3 class="recruitment-program-content__title">
+                    2021 Dev-Matching: 웹 프론트엔드 개발자(하반기)
+                  </h3>
+                  <div class="recruitment-program-content__detail">
+                    <div class="recruitment-program-content__date">
+                      <p>접수 : 21년 08월 17일 11:00 - 09월 03일 17:00</p>
+                      <p>테스트 : 21년 09월 04일 14:00 - 09월 04일 17:00</p>
+                    </div>
+                    <div class="recruitment-program-content__languages"></div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </article>
-        <article>
-          <div>
-            <div>
-              <h2>테크 피드</h2>
+          </article>
+          <article class="job-posts sub-container">
+            <div class="article-head">
+              <h2 class="article-title">채용 중인 포지션</h2>
+              <button class="more-btn">포지션 더보기</button>
             </div>
-            <button>더보기</button>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <img src="" alt="" />
-                  <h3>인기, 연봉, 배우고 싶은 프로그래밍 언어 순위</h3>
-                  <p>
-                    Stack Overflow가 전 세계 프로그래머들을 대상으로 설문 조사를
-                    했습니다. 프로그래머들이 좋아하는 언어, 연봉이 높은
-                    프로그래밍 언어, 가장 많이 사용하는 프로그래밍 언어에 대한
-                    설문 조사 결과입니다.
-                  </p>
+            <div class="job-positions">
+              <div class="job-position">Java</div>
+              <div class="job-position">Spring</div>
+              <div class="job-position">Node.js</div>
+              <div class="job-position">Django</div>
+              <div class="job-position">ReactJS</div>
+              <div class="job-position">Vue.js</div>
+              <div class="job-position">JavaScript</div>
+              <div class="job-position">Python</div>
+              <div class="job-position">Kotlin</div>
+              <div class="job-position">C++</div>
+              <div class="job-position">Android</div>
+              <div class="job-position">IOS</div>
+              <div class="job-position">서버/백엔드</div>
+              <div class="job-position">프론트엔드</div>
+              <div class="job-position">웹 풀스택</div>
+              <div class="job-position">안드로이드 앱</div>
+              <div class="job-position">아이폰 앱</div>
+            </div>
+            <div class="job-posts-list">
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/2412/%EC%9E%90%EC%82%B0_1-100.jpg"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">Back-end Engineer</h3>
+                  <p class="job-post__subtitle">스페이스워크</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">서버/백엔드</div>
+                    <div class="job-post__tech">Amazon Web Services(AWS)</div>
+                    <div class="job-post__tech">GCP(Google Cloud Platform)</div>
+                    <div class="job-post__tech">RxJava</div>
+                    <div class="job-post__tech">Reactor</div>
+                    <div class="job-post__tech">Kubernetes</div>
+                  </div>
                 </div>
-                <div>
-                  <div>개발 지식</div>
+              </div>
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/4156/Blind_Logo_New_Official.png"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">
+                    시니어 데이터 분석가 (Sr. Data Analyst)
+                  </h3>
+                  <p class="job-post__subtitle">Teamblind</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">데이터 엔지니어</div>
+                    <div class="job-post__tech">Vue.js</div>
+                    <div class="job-post__tech">JavaScript</div>
+                    <div class="job-post__tech">Node.js</div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/936/welt_logobox_wh.jpg"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">안드로이드 개발자</h3>
+                  <p class="job-post__subtitle">웰트</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">안드로이드 앱</div>
+                    <div class="job-post__tech">BLE(Bluetooth Low Energy)</div>
+                    <div class="job-post__tech">Java</div>
+                    <div class="job-post__tech">Kotlin</div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/1263/%EB%A1%9C%EA%B3%A0.png"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">공통 플랫폼 개발자</h3>
+                  <p class="job-post__subtitle">와디즈</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">서버/백엔드</div>
+                    <div class="job-post__tech">Spring Boot</div>
+                    <div class="job-post__tech">Spring</div>
+                    <div class="job-post__tech">Java</div>
+                    <div class="job-post__tech">NoSQL</div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/4964/image001.jpg"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">
+                    프론트엔드 개발자 (Front-end Developer)
+                  </h3>
+                  <p class="job-post__subtitle">카이아이컴퍼니</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">프론트엔드</div>
+                    <div class="job-post__tech">Git</div>
+                    <div class="job-post__tech">CSS</div>
+                    <div class="job-post__tech">JavaScript</div>
+                    <div class="job-post__tech">HTML5</div>
+                    <div class="job-post__tech">Vue.js</div>
+                    <div class="job-post__tech">ReactJS</div>
+                  </div>
+                </div>
+              </div>
+              <div class="job-post">
+                <img
+                  src="https://grepp-programmers.s3.amazonaws.com/production/company/logo/5125/%EB%A6%B4%EB%A6%AC%EC%BB%A4%EB%B2%84_%EB%A1%9C%EA%B3%A0.png"
+                  class="job-post__image"
+                  alt=""
+                />
+                <div class="job-post__info">
+                  <h3 class="job-post__title">백엔드 서비스 개발</h3>
+                  <p class="job-post__subtitle">릴리커버</p>
+                  <div class="job-post__techs">
+                    <div class="job-post__tech">서버/백엔드</div>
+                    <div class="job-post__tech">머신러닝</div>
+                    <div class="job-post__tech">인공지능(AI)</div>
+                    <div class="job-post__tech">SQL</div>
+                    <div class="job-post__tech">Python</div>
+                    <div class="job-post__tech">PHP</div>
+                    <div class="job-post__tech">MySQL</div>
+                    <div class="job-post__tech">Django</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div>
-                <img src="" alt="" />
-                <div>썬도그</div>
-              </div>
-              <img src="" alt="" />
+          </article>
+          <article class="tech-feed sub-container">
+            <div class="article-head">
+              <h2 class="article-title">테크 피드</h2>
+              <button class="more-btn">더보기</button>
             </div>
-          </div>
-        </article>
-        <article>
-          <div>
-            <h2>스킬 체크</h2>
-            <p>
+            <div class="tech-posts-list">
+              <div class="tech-post">
+                <div class="tech-post__contents-container">
+                  <div class="tech-post__contents">
+                    <i class="fas fa-shapes"></i>
+                    <h3 class="tech-post__title">
+                      인기, 연봉, 배우고 싶은 프로그래밍 언어 순위
+                    </h3>
+                    <p class="tech-post__text">
+                      Stack Overflow가 전 세계 프로그래머들을 대상으로 설문
+                      조사를 했습니다. 프로그래머들이 좋아하는 언어, 연봉이 높은
+                      프로그래밍 언어, 가장 많이 사용하는 프로그래밍 언어에 대한
+                      설문 조사 결과입니다.
+                    </p>
+                  </div>
+                  <div class="tech-post__keywords">
+                    <div class="tech-post__keyword">개발 지식</div>
+                  </div>
+                </div>
+                <div class="tech-post__author-container">
+                  <div class="tech-post__author">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="tech-post__author-name">썬도그</div>
+                  </div>
+                  <i class="fas fa-link"></i>
+                </div>
+              </div>
+              <div class="tech-post">
+                <div class="tech-post__contents-container">
+                  <div class="tech-post__contents">
+                    <i class="fas fa-shapes"></i>
+                    <h3 class="tech-post__title">
+                      한국지역정보개발원 취업 후기 [취준쩜]
+                    </h3>
+                    <p class="tech-post__text">
+                      한국지역정보개발원 합격자이신 아스키 님 모셨습니다!
+                      서류전형부터 면접전형까지 리얼한 후기를 들려줍니다.
+                    </p>
+                  </div>
+                  <div class="tech-post__keywords">
+                    <div class="tech-post__keyword">주니어</div>
+                    <div class="tech-post__keyword">신입</div>
+                  </div>
+                </div>
+                <div class="tech-post__author-container">
+                  <div class="tech-post__author">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="tech-post__author-name">쩜튜브</div>
+                  </div>
+                  <i class="fas fa-link"></i>
+                </div>
+              </div>
+              <div class="tech-post">
+                <div class="tech-post__contents-container">
+                  <div class="tech-post__contents">
+                    <i class="fas fa-shapes"></i>
+                    <h3 class="tech-post__title">
+                      스타트업에 어울리는 0.6%의 인재 채용담
+                    </h3>
+                    <p class="tech-post__text">
+                      우리 팀의 지난 채용 과정을 돌아보면 77:1의 입사 경쟁률,
+                      수습기간 3개월이 지나고 채용이 확정된 비율은 전체 지원자의
+                      0.6%로 더 적다. 우리는 어떤 기준에서 채용하는지, 구성원을
+                      어떻게 바라보는지에 대해 풀어보고자 한다.
+                    </p>
+                  </div>
+                  <div class="tech-post__keywords">
+                    <div class="tech-post__keyword">알고케어</div>
+                    <div class="tech-post__keyword">신입</div>
+                    <div class="tech-post__keyword">스타트업</div>
+                  </div>
+                </div>
+                <div class="tech-post__author-container">
+                  <div class="tech-post__author">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="tech-post__author-name">알고케어</div>
+                  </div>
+                  <i class="fas fa-link"></i>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="skill sub-container">
+            <h2 class="skill__title">스킬 체크</h2>
+            <p class="skill__descript">
               Code First! 내 프로그래밍 실력을 확인하세요.<br />
               내가 작성한 코드가 프로필에 첨부되어 더 많은 기업으로부터 제안을
               받을 수 있습니다.
             </p>
-            <div>
-              <div><img src="" alt="" /></div>
-              <div>
-                <p>레벨 1</p>
-                <p>
+            <div class="skill-level-container">
+              <div class="skill-level-img-container">
+                <i class="fas fa-crown skill-level__img"></i>
+              </div>
+              <div class="skill-level-contents">
+                <h3 class="skill-level__title">레벨 1</h3>
+                <p class="skill-level__descript">
                   프로그래밍 입문자를 위한 쉬운 수준입니다. 최소한의 컴퓨터적
                   사고와 프로그래밍 문법을 이해하고 있다면 어렵지 않습니다.
                   문자열, 구현, 정렬 문제가 나오지만 종종 그리디, 해시 문제도
                   출제될 수 있습니다.
                 </p>
-                <div>
-                  <span>제한 시간</span><span>40분</span> <span>통과율</span
-                  ><span>28.8%</span> <span>평균 완료 시간</span
-                  ><span>27.4분</span><span>평균 점수</span><span>43.1점</span>
+                <div class="skill-level-info">
+                  <div class="skill-level-info-item">
+                    <span class="skill-level-info__label">제한 시간</span>
+                    <span class="skill-level-info__value">40분</span>
+                  </div>
+                  <div class="skill-level-info-item">
+                    <span class="skill-level-info__label">통과율</span>
+                    <span class="skill-level-info__value">28.8%</span>
+                  </div>
+                  <div class="skill-level-info-item">
+                    <span class="skill-level-info__label">평균 완료 시간</span>
+                    <span class="skill-level-info__value">27.4분</span>
+                  </div>
+                  <div class="skill-level-info-item">
+                    <span class="skill-level-info__label">평균 점수</span>
+                    <span class="skill-level-info__value">43.1점</span>
+                  </div>
                 </div>
-                <div><img src="" alt="" /></div>
               </div>
-              <div>
-                <div>
-                  <img src="" alt="" />
-                  <p>이유진님이 획득한 스킬체크 레벨</p>
-                </div>
-                <div>
-                  <img src="" alt="" />
+            </div>
+            <div class="user-skill-level-container">
+              <div class="user-skill-level-head">
+                <i class="fas fa-trophy"></i>
+                <p class="user-skill-level__title">
+                  이유진님이 획득한 스킬체크 레벨
+                </p>
+              </div>
+              <div class="user-skill-level-info">
+                <div class="level-step">
+                  <i class="fas fa-crown"></i>
                   <p>레벨 1</p>
-                  <img src="" alt="" />
+                </div>
+                <div class="level-step">
+                  <i class="fas fa-crown"></i>
                   <p>레벨 2</p>
-                  <img src="" alt="" />
+                </div>
+                <div class="level-step">
+                  <i class="fas fa-crown"></i>
                   <p>레벨 3</p>
-                  <img src="" alt="" />
+                </div>
+                <div class="level-step">
+                  <i class="fas fa-crown"></i>
                   <p>레벨 4</p>
-                  <img src="" alt="" />
+                </div>
+                <div class="level-step">
+                  <i class="fas fa-crown"></i>
                   <p>레벨 5</p>
                 </div>
               </div>
             </div>
+          </article>
+        </section>
+        <aside>
+          <div class="widget">
+            <div class="widget-head">
+              <h2 class="widget__title">내 프로필</h2>
+              <div class="widget-option">
+                <i class="fas fa-question-circle"></i>
+                <p>매칭 활성화</p>
+                <div class="option-toggle">
+                  <div class="option-toggle__btn"></div>
+                </div>
+              </div>
+            </div>
+            <div class="widget-contents">
+              <p class="widget__user-name">이유진</p>
+              <p class="widget__user-email">yujinyll9148@gmail.com</p>
+              <hr class="wdiget-hr" />
+              <div class="widget-user-info">
+                <p class="widget-label">희망 직무</p>
+                <p class="widget-value">-</p>
+              </div>
+              <hr class="wdiget-hr" />
+              <div class="widget-user-info">
+                <p class="widget-label">주요 기술</p>
+                <p class="widget-value">-</p>
+              </div>
+              <hr class="wdiget-hr" />
+              <div class="widget-user-info">
+                <p class="widget-label">업무 경력</p>
+                <p class="widget-value">신입</p>
+              </div>
+              <hr class="wdiget-hr" />
+              <div class="widget__btn-container">
+                <button class="widget__btn">
+                  프로필 완성도 높이기 <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </article>
-      </section>
-      <aside>
-        <div>
-          <div>
-            <h2>내 프로필</h2>
-          </div>
-          <div>
-            <p>이유진</p>
-            <p>yujinyll9148@gmail.com</p>
-            <button>프로필 등록하기</button>
-          </div>
-        </div>
-      </aside>
+        </aside>
+      </div>
     </main>
     <footer>
-      <div>
-        <div>
-          <div>
-            <p>서비스</p>
-            <p>개발자용 프로그래머스</p>
-            <p>기업용 프로그래머스</p>
-            <p>프로그래머스 스쿨</p>
+      <div class="main-container footer-container">
+        <div class="footer-nav-with-sites">
+          <div class="footer-nav">
+            <div class="footer-list">
+              <p class="footer__list-title">서비스</p>
+              <p class="footer__item">개발자용 프로그래머스</p>
+              <p class="footer__item">기업용 프로그래머스</p>
+              <p class="footer__item">프로그래머스 스쿨</p>
+            </div>
+            <div class="footer-list">
+              <p class="footer__list-title">약관</p>
+              <p class="footer__item">개인정보 처리방침</p>
+              <p class="footer__item">이용약관</p>
+            </div>
+            <div class="footer-list">
+              <p class="footer__list-title">문의</p>
+              <p class="footer__item">
+                FAQ/문의<i class="fas fa-external-link-alt"></i>
+              </p>
+              <p class="footer__item">
+                교육 결제, 환불 관련 문의<i
+                  class="fas fa-external-link-alt"
+                ></i>
+              </p>
+              <p class="footer__item">
+                코딩 테스트(응시자) 문의<i class="fas fa-external-link-alt"></i>
+              </p>
+            </div>
+            <div class="footer-list">
+              <p class="footer__list-title">고객센터</p>
+              <p class="footer__item">기업 서비스 : 02-539-1886</p>
+              <p class="footer__item">교육 내용 관련 문의 : 02-539-1885</p>
+              <p class="footer__item">
+                제휴 및 서비스 운영, 기타 문의 : 02-539-1882
+              </p>
+              <p class="footer__schedule">
+                문의하기 운영시간 : 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)<br />
+                점심시간 : 오후 12시 ~ 오후 1시
+              </p>
+            </div>
           </div>
+          <button class="footer-sites-btn">
+            패밀리사이트<i class="fas fa-sort-down"></i>
+          </button>
+        </div>
+        <div class="footer-more-info">
           <div>
-            <p>약관</p>
-            <p>개인정보 처리방침</p>
-            <p>이용약관</p>
-          </div>
-          <div>
-            <p>문의</p>
-            <p>FAQ/문의</p>
-            <p>교육 결제, 환불 관련 문의</p>
-            <p>코딩 테스트(응시자) 문의</p>
-          </div>
-          <div>
-            <p>고객센터</p>
-            <p>기업 서비스 : 02-539-1886</p>
-            <p>교육 내용 관련 문의 : 02-539-1885</p>
-            <p>제휴 및 서비스 운영, 기타 문의 : 02-539-1882</p>
-            <p>
-              문의하기 운영시간 : 오전 9시 ~ 오후 6시 (주말 및 공휴일 휴무)<br />
-              점심시간 : 오후 12시 ~ 오후 1시
+            <p class="footer-site-name">2021 프로그래머스</p>
+            <p class="footer-company">
+              (주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 서초구 강남대로
+              327, 2층 프로그래머스(서초동, 대륭서초타워) / 사업자등록번호
+              220-88-75699 / 통신판매업신고 제 2014-서울강남-03241호 /
+              직업정보제공사업 신고번호 J1200020180027 / 유료직업소개사업
+              등록번호 (국내)제2019-3220237-14-5-00020호/p>
             </p>
           </div>
-        </div>
-        <div><button>패밀리사이트</button></div>
-        <div>
-          <p>2021 프로그래머스</p>
-          <p>
-            (주)그렙 / 공동대표 이확영, 임성수 / 서울특별시 서초구 강남대로 327,
-            2층 프로그래머스(서초동, 대륭서초타워) / 사업자등록번호 220-88-75699
-            / 통신판매업신고 제 2014-서울강남-03241호 / 직업정보제공사업
-            신고번호 J1200020180027 / 유료직업소개사업 등록번호
-            (국내)제2019-3220237-14-5-00020호/p>
-          </p>
-          <div>
-            <p>프로그래머스 인재 채용</p>
-            <div>
-              <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+          <div class="footer-recruit">
+            <div class="footer-recruit-link">
+              <p>프로그래머스 인재 채용</p>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="footer-recruit-sns">
+              <i class="fab fa-facebook"></i><i class="fab fa-youtube"></i
+              ><i class="fab fa-blogger"></i>
             </div>
           </div>
         </div>

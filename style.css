@@ -1,16 +1,1011 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 @import "reset.css";
+
+:root {
+  --blue-color: #0078ff;
+  --light-blue-color: #eeebff;
+  --gray-blue-color: #d7e2db;
+  --light-gray-blue-color: #98a8b9;
+  --gray-color: #e9ecf3;
+  --dark-gray-color: #44576c;
+  --default-color: #263747;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.03s ease-out;
+}
 
 html {
   font-size: 10px;
-  font-family: "Inter", "NotoSansKR", Helvetica, Arial, sans-serif;
+  font-family: "Inter", "Noto Sans KR", "Helvetica Neue", Helvetica, Arial,
+    "맑은 고딕", malgun gothic, "돋움", Dotum, sans-serif, "Apple Color Emoji",
+    "Noto Color Emoji";
+  color: var(--default-color);
 }
 
 body {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-main {
+.main-container {
+  max-width: 1168px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.main-container--horizontal {
   display: flex;
+  gap: 4rem;
+}
+
+.sub-container {
+  max-width: 818px;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.more-btn {
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+  border-radius: 0.3em;
+  background-color: transparent;
+  padding: 0.4em 0.9em;
+}
+
+.article-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.article-title-with-help {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.fa-question-circle {
+  font-size: 1.7rem;
+}
+
+.recruitment-program-content,
+.job-post,
+.tech-post,
+.skill,
+.widget {
+  border: 1px solid var(--gray-blue-color);
+  border-radius: 0.4rem;
+}
+/*=========
+header&nav
+=========*/
+header {
+  background-color: #0c151c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1.7em;
+}
+
+.img-logo-with-text {
+  max-height: 3.4rem;
+}
+
+.img-logo-only-img {
+  display: none;
+  max-height: 3.4rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4em;
+}
+
+.nav__item {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #b2c0cc;
+}
+
+.nav__item:nth-child(5) {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.7em;
+}
+
+.header-icons > i {
+  font-size: 2rem;
+  color: #b2c0cc;
+}
+
+.header-icon-bar {
+  width: 2.2rem;
+  height: 1.4rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar__line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+}
+
+/*=========
+banner
+=========*/
+.banner {
+  background-color: #172334;
+  margin-bottom: 4rem;
+}
+
+.banner-container {
+  padding: 2.7em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-contents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-headline {
+  color: white;
+}
+
+.banner__subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+}
+
+.banner__title {
+  font-size: 2.6rem;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.banner__descript {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.61);
+  margin-top: 2em;
+}
+
+.banner__img {
+  height: 16rem;
+  margin-right: 8rem;
+}
+
+.banner-slide-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  position: relative;
+  bottom: -1em;
+}
+
+.banner-slide {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5em;
+}
+
+.slide--selected {
+  background-color: white;
+  width: 5em;
+}
+
+.slide--unselected {
+  background-color: rgba(255, 255, 255, 0.432);
+}
+
+/*=========
+채용 프로그램
+=========*/
+
+.recruitment-program {
+  margin-bottom: 6rem;
+}
+
+.recruitment-program-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.recruitment-program-content {
+  display: flex;
+  height: 21.2rem;
+}
+
+.recruitment-program-img-container {
+  width: 45%;
+  height: 100%;
+}
+
+.recruitment-program-info__img {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.recruitment-program-content__info {
+  width: 55%;
+  padding: 2em 2.3em 3em 2.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recruitment-program-content__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.88rem;
+  word-break: keep-all;
+}
+
+.recruitment-program-content__date {
+  font-size: 1.4rem;
+  color: var(--light-gray-blue-color);
+}
+
+.recruitment-program-content__date > p {
+  margin-bottom: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recruitment-program-content__languages {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 0.4em;
+  color: var(--light-gray-blue-color);
+  margin-top: 0.5em;
+}
+
+/*==========
+채용 중인 포지션
+===========*/
+
+.job-posts {
+  margin-bottom: 4rem;
+}
+
+.job-positions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.job-position {
+  background-color: var(--light-blue-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--blue-color);
+  padding: 0.6em 1.1em;
+  border: 1px solid var(--light-blue-color);
+  border-radius: 0.4rem;
+}
+
+.job-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.job-post {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  min-height: 11.3rem;
+  height: 11.3rem;
+  padding: 1.8em;
+  align-items: center;
+  overflow: hidden;
+}
+
+.job-post__image {
+  max-width: 7.5rem;
+  max-height: 7.5rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.job-post__info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.job-post__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.job-post__subtitle {
+  font-size: 1.4rem;
+  color: var(--light-gray-blue-color);
+  margin-bottom: 0.3em;
+}
+
+.job-post__techs {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow: hidden;
+}
+
+.job-post__techs::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 10em;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white);
+}
+
+.job-post__tech {
+  background-color: var(--gray-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--dark-gray-color);
+  padding: 0.4em 0.7em;
+  border: 1px solid var(--light-blue-color);
+  border-radius: 0.4rem;
+  white-space: nowrap;
+}
+
+/*==========
+테크 피드
+===========*/
+
+.tech-feed {
+  margin-bottom: 6rem;
+}
+
+.tech-posts-list {
+  display: flex;
+  gap: 0 1.5rem;
+}
+
+.tech-post {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.tech-post__contents-container {
+  min-height: 27.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 1.6rem 1.6rem 2rem 1.6rem;
+}
+
+.tech-post__contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-shapes {
+  color: #ff9800;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.tech-post__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  word-break: keep-all;
+  margin-bottom: 1rem;
+}
+
+.tech-post__text {
+  display: -webkit-box;
+  font-size: 1.4rem;
+  color: var(--light-gray-blue-color);
+  line-height: 2.1rem;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.tech-post__keywords {
+  display: flex;
+  gap: 1rem;
+}
+
+.tech-post__keyword {
+  font-size: 1.2rem;
+  color: var(--light-gray-blue-color);
+}
+
+.tech-post__author-container {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-blue-color);
+  padding: 2rem 1.6rem;
+}
+
+.tech-post__author {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.tech-post__author > i {
+  color: var(--light-gray-blue-color);
+  font-size: 1.6rem;
+}
+
+.fa-link {
+  color: var(--light-gray-blue-color);
+  font-size: 1.6rem;
+}
+
+.tech-post__author-name {
+  font-size: 1.2rem;
+  color: var(--light-gray-blue-color);
+}
+
+/*=====
+스킬 체크
+=====*/
+
+.skill {
+  padding: 1.8rem;
+}
+
+.skill__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.skill__descript {
+  font-size: 1.6rem;
+  line-height: 2.56rem;
+  margin-bottom: 1.6rem;
+}
+
+.skill-level-container {
+  background-color: #fbfbfd;
+  border: 1px solid #fbfbfd;
+  border-radius: 0.4rem;
+  padding: 1.8rem 1.4rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 2em;
+}
+
+.skill-level__img {
+  color: var(--light-gray-blue-color);
+  font-size: 3.5rem;
+}
+
+.skill-level__title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.skill-level__descript {
+  font-size: 1.4rem;
+  line-height: 2.38rem;
+  margin-bottom: 1rem;
+}
+
+.skill-level-info {
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.skill-level-info-item {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.skill-level-info__label {
+  color: var(--light-gray-blue-color);
+}
+
+.user-skill-level-container {
+}
+
+.user-skill-level-head {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 2.3rem;
+}
+
+.fa-trophy {
+  color: var(--blue-color);
+  font-size: 1.4rem;
+}
+
+.user-skill-level__title {
+  font-size: 1.6rem;
+}
+
+.user-skill-level-info {
+  display: flex;
+  align-items: center;
+  gap: 3.2em;
+  padding: 1.2em 2.7em;
+}
+
+.level-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.2em;
+}
+
+.level-step > .fa-crown {
+  color: #ebebeb;
+  font-size: 3.5rem;
+}
+
+.level-step > p {
+  color: var(--light-gray-blue-color);
+  font-size: 1.4rem;
+}
+
+/*=====
+aside
+=====*/
+
+.widget {
+  width: 30.8rem;
+}
+
+.widget-head {
+  padding: 2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.widget-option {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+
+.widget-option > .fa-question-circle {
+  color: #cdd7e0;
+}
+
+.widget-option > p {
+  font-size: 1.4rem;
+}
+
+.option-toggle {
+  height: 16px;
+  width: 28px;
+  border-radius: 2em;
+  background-color: #cdd7e0;
+  display: flex;
+  align-items: center;
+  padding: 0.2em;
+}
+
+.option-toggle__btn {
+  height: 13px;
+  width: 13px;
+  border-radius: 2em;
+  background-color: white;
+}
+
+.widget__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.widget-contents {
+  border-top: 1px solid var(--gray-blue-color);
+  padding: 2rem 1.6rem 1rem 1.6rem;
+}
+
+.widget__user-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.widget__user-email {
+  font-size: 1.4rem;
+  color: #5f7f90;
+  margin: 0.8em 0 2rem 0;
+}
+
+.wdiget-hr {
+  margin: 1em 0;
+  border: none;
+  height: 1px;
+  background-color: var(--gray-blue-color);
+}
+
+.widget-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.widget-label {
+  font-size: 1.4rem;
+  color: #5f7f90;
+}
+
+.widget-value {
+  font-size: 1.4rem;
+}
+
+.widget__btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.widget__btn {
+  font-family: "Noto Sans KR";
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  color: var(--blue-color);
+  border: none;
+  padding: 0.35em 0;
+}
+
+.widget__btn > i {
+  margin-left: 0.6em;
+}
+
+/*==========
+footer
+===========*/
+
+footer {
+  margin-top: 8rem;
+  border-top: 1px solid var(--gray-blue-color);
+  padding: 5.8rem 0;
+  word-break: keep-all;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav-with-sites {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-list {
+}
+
+.footer__list-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.7em;
+}
+
+.footer__item {
+  font-size: 1.4rem;
+  color: var(--dark-gray-color);
+  line-height: 1.7em;
+}
+
+.fa-external-link-alt {
+  margin-left: 0.3em;
+  font-size: 0.7em;
+}
+
+.footer__schedule {
+  font-size: 1.2rem;
+  color: var(--light-gray-blue-color);
+  line-height: 1.8rem;
+}
+
+.footer-sites-btn {
+  font-family: "Noto Sans KR";
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid var(--gray-blue-color);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.footer-sites-btn > .fa-sort-down {
+  color: var(--dark-gray-color);
+  margin-left: 0.5em;
+  position: relative;
+  bottom: 0.2em;
+}
+
+.footer-more-info {
+  font-size: 1.2rem;
+  color: var(--light-gray-blue-color);
+}
+
+.footer-site-name {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.footer-company {
+  line-height: 1.9rem;
+}
+
+.footer-recruit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.footer-recruit-link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.fa-arrow-right {
+  font-size: 0.8em;
+}
+
+.footer-recruit-sns {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-recruit-sns > i {
+  font-size: 17px;
+}
+
+/*==========
+media query
+==========*/
+
+@media (max-width: 1200px) {
+  nav {
+    flex: 1;
+    margin-left: 2em;
+  }
+  .banner-container {
+    margin: 0 5.6rem;
+  }
+
+  .banner__img {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-container--horizontal {
+    flex-direction: column-reverse;
+  }
+
+  .widget,
+  .sub-container {
+    width: auto;
+    max-width: 100%;
+  }
+
+  /*==========
+  헤더
+  ===========*/
+  .img-logo-with-text {
+    display: none;
+  }
+
+  .img-logo-only-img {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .header-icons {
+    display: none;
+  }
+
+  .header-icon-bar {
+    display: flex;
+  }
+
+  /*==========
+  푸터
+  ===========*/
+  .footer-nav-with-sites {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 9px;
+  }
+
+  /*==========
+  배너
+  ===========*/
+  .banner-container {
+    margin: auto;
+  }
+
+  .banner-contents {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0em 3em;
+  }
+
+  .banner__descript {
+    margin-bottom: 2em;
+  }
+
+  .banner-img-container {
+    margin: 0 auto;
+  }
+
+  .banner__img {
+    margin: 0;
+  }
+
+  /*==========
+  채용 프로그램
+  ===========*/
+
+  .recruitment-program-content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .recruitment-program-img-container {
+    max-width: auto;
+    width: auto;
+    height: 21rem;
+  }
+  .recruitment-program-info__img {
+    height: 100%;
+  }
+
+  .recruitment-program-content__info {
+    width: 100%;
+  }
+
+  .recruitment-program-content__title {
+    padding-bottom: 1.2em;
+  }
+
+  /*==========
+  테크 피드
+  ===========*/
+  .tech-posts-list {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .tech-post__contents-container {
+    min-height: auto;
+  }
+
+  .tech-post__keywords {
+    margin-top: 3.4rem;
+  }
+
+  .fa-link {
+    display: none;
+  }
+
+  /*==========
+  푸터
+  ===========*/
+  .footer-nav-with-sites {
+    margin-bottom: 5rem;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .footer__list-title {
+    margin-bottom: 1em;
+  }
+
+  .footer__schedule {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .footer-recruit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-recruit-link {
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 575px) {
+  header,
+  .banner {
+    font-size: 9px;
+  }
+
+  .banner {
+    height: 38rem;
+    overflow: hidden;
+  }
+
+  .banner-slide-container {
+    display: none;
+  }
+
+  /*=========
+  스킬 체크
+  ===========*/
+  .user-skill-level-info {
+    display: flex;
+    align-items: center;
+    gap: 2.2em;
+    padding: 1em 2.7em;
+  }
+
+  .level-step > .fa-crown {
+    color: #ebebeb;
+    font-size: 2rem;
+  }
 }
